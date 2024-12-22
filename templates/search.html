@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Search - Grade Top Up Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <img src="{{ url_for('static', filename='images/V.png') }}" alt="Logo" class="w-12 h-12 object-cover" />
+            <nav class="flex space-x-4">
+                <a class="text-white" href="{{ url_for('beranda') }}">Beranda</a>
+                <a class="text-white" href="#">Produk</a>
+                <a class="text-white" href="#">Tentang Kami</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="bg-gray-700 p-2 rounded">
+                <i class="fas fa-search"></i> Search
+            </button>
+            <button class="bg-gray-700 p-2 rounded">
+                <a class="text-white" href="{{ url_for('masuk') }}">Masuk</a>
+            </button>
+            <button class="bg-orange-500 p-2 rounded">
+                <a class="text-white" href="{{ url_for('daftar') }}">Daftar</a>
+            </button>
+        </div>
+    </header>
+
+    <main class="p-4">
+        <h2 class="text-2xl font-bold text-orange-500 mb-4">🔍 Cari Produk</h2>
+        <div class="mb-6">
+            <input type="text" placeholder="Cari produk..." class="w-full p-2 bg-gray-800 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-orange-500" />
+            <button class="bg-orange-500 p-2 rounded-lg mt-2">Cari</button>
+        </div>
+
+        <section class="grid grid-cols-3 gap-4">
+            <!-- Hasil pencarian akan ditampilkan di sini -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="{{ url_for('static', filename='images/hanabi ai.jpeg') }}" 
+                     alt="Mobile Legends" 
+                     class="w-full h-[200px] rounded-lg mb-2 object-cover" />
+                           <h3 class="text-xl font-bold">Mobile Legends</h3>
+                <p>Moonton</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="{{ url_for('static', filename='images/PUBG MOBILE.jpeg') }}" alt="PUBG" class="w-full h-[200px] rounded-lg mb-2 object-cover" />
+                <h3 class="text-xl font-bold">PUBG</h3>
+                <p>Tencent Games</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="{{ url_for('static', filename='images/Free Fire Personagens Wallpapers Para Celular E PC • 2024.jpeg') }}" alt="Paket Joki" class="w-full h-[200px] rounded-lg mb-2 object-cover" />
+                <h3 class="text-xl font-bold">Free Fire</h3>
+                <p>Garena</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 p-4 text-center">
+        <p class="text-gray-400">© 2024 Grade Top Up Games. All rights reserved.</p>
+    </footer>
+</body>
+</html>

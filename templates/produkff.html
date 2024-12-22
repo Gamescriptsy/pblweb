@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Produk Free Fire - Grade Top Up Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <img src="{{ url_for('static', filename='images/V.png') }}" alt="Logo" class="w-12 h-12 object-cover" />
+            <nav class="flex space-x-4">
+                <a class="text-white" href="{{ url_for('home') }}">Beranda</a>
+                <a class="text-white" href="{{ url_for('produk') }}">Produk</a>
+                <a class="text-white" href="{{ url_for('produkml') }}">Mobile Legends</a>
+                <a class="text-orange-500" href="{{ url_for('produkff') }}">Free Fire</a>
+                <a class="text-white" href="{{ url_for('tentang') }}">Tentang Kami</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="bg-gray-700 p-2 rounded">
+                <i class="fas fa-search"></i> Search
+            </button>
+            <button class="bg-gray-700 p-2 rounded">
+                <a class="text-white" href="{{ url_for('masuk') }}">Masuk</a>
+            </button>
+            <button class="bg-orange-500 p-2 rounded">
+                <a class="text-white" href="{{ url_for('daftar') }}">Daftar</a>
+            </button>
+        </div>
+    </header>
+
+    <main class="p-4">
+        <h2 class="text-2xl font-bold text-orange-500 mb-4">🔥 BARANG FREE FIRE 🔥</h2>
+        <p class="mb-4">Berikut adalah barang yang dijual di Free Fire:</p>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="{{ url_for('static', filename='images/uc_100.jpeg') }}" alt="100 diamond" class="w-[300px] h-[300px] rounded-lg mb-4 object-cover" />
+                <h3 class="text-xl font-bold">100 diamond</h3>
+                <p class="text-green-400">Harga: Rp 15.000</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="{{ url_for('static', filename='images/uc_250.jpeg') }}" alt="250 diamond" class="w-[300px] h-[300px] rounded-lg mb-4 object-cover" />
+                <h3 class="text-xl font-bold">250 diamond</h3>
+                <p class="text-green-400">Harga: Rp 35.000</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="{{ url_for('static', filename='images/uc_500.jpeg') }}" alt="500 diamond" class="w-[300px] h-[300px] rounded-lg mb-4 object-cover" />
+                <h3 class="text-xl font-bold">500 UC</h3>
+                <p class="text-green-400">Harga: Rp 65.000</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <img src="{{ url_for('static', filename='images/uc_1000.jpeg') }}" alt="1000 UC" class="w-[300px] h-[300px] rounded-lg mb-4 object-cover" />
+                <h3 class="text-xl font-bold">1000 Diamond</h3>
+                <p class="text-green-400">Harga: Rp 120.000</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-900 flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+   <div class="flex justify-end">
+    <a href="{{ url_for('beranda') }}" class="text-white text-xl">     <i class="fas fa-times">
+     </i>
+    </button>
+   </div>
+   <h1 class="text-3xl text-white font-bold mb-2">
+    Daftar
+   </h1>
+   <p class="text-gray-400 mb-6">
+    Masukkan informasi pendaftaran yang valid.
+   </p>
+   <form>
+    <div class="mb-4">
+     <label class="block text-gray-400 mb-1">
+      Nama lengkap
+     </label>
+     <input class="w-full p-3 rounded bg-gray-700 text-white" placeholder="Nama lengkap" type="text"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-400 mb-1">
+      Username
+     </label>
+     <input class="w-full p-3 rounded bg-gray-700 text-white" placeholder="Username" type="text"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-400 mb-1">
+      Alamat email
+     </label>
+     <input class="w-full p-3 rounded bg-gray-700 text-white" placeholder="Alamat email" type="email"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-400 mb-1">
+      Nomor whatsapp
+     </label>
+     <input class="w-full p-3 rounded bg-gray-700 text-white" placeholder="Nomor whatsapp" type="text"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-400 mb-1">
+      Kata sandi
+     </label>
+     <div class="relative">
+      <input class="w-full p-3 rounded bg-gray-700 text-white" placeholder="Kata sandi" type="password"/>
+      <button class="absolute right-3 top-3 text-gray-400" type="button">
+       <i class="fas fa-eye-slash">
+       </i>
+      </button>
+     </div>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-400 mb-1">
+      Konfirmasi kata sandi
+     </label>
+     <div class="relative">
+      <input class="w-full p-3 rounded bg-gray-700 text-white" placeholder="Konfirmasi kata sandi" type="password"/>
+      <button class="absolute right-3 top-3 text-gray-400" type="button">
+       <i class="fas fa-eye-slash">
+       </i>
+      </button>
+     </div>
+    </div>
+    <div class="mb-4">
+     <label class="inline-flex items-center text-gray-400">
+      <input class="form-checkbox text-orange-500" type="checkbox"/>
+      <span class="ml-2">
+       Saya setuju dengan
+       <a class="text-orange-500" href="#">
+        Syarat dan Ketentuan
+       </a>
+       dan
+       <a class="text-orange-500" href="#">
+        Kebijakan Pribadi
+       </a>
+       .
+      </span>
+     </label>
+    </div>
+    <div class="mb-4">
+     <div class="flex items-center">
+     </div>
+    </div>
+    <button class="w-full bg-orange-500 text-white p-3 rounded-lg flex items-center justify-center" type="submit">
+     <i class="fas fa-user-plus mr-2">
+     </i>
+     Daftar
+    </button>
+   </form>
+   <div class="mt-6 text-center">
+    <p class="text-gray-400">
+     Sudah memiliki akun?
+    </p>
+    <button class="w-full bg-gray-700 text-white p-3 rounded-lg mt-2 flex items-center justify-center">
+     <i class="fas fa-lock mr-2">
+     </i>
+     Masuk
+    </button>
+   </div>
+  </div>
+ </body>
+</html>

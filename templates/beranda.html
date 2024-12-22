@@ -1,0 +1,212 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Grade Top Up Games
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+  </script>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <header class="bg-gray-800 p-4 flex items-center justify-between">
+   <div class="flex items-center space-x-4">
+    <img src="{{ url_for('static', filename='images/V.png') }}" alt="Logo" class="w-12 h-12 object-cover" />
+    <nav class="flex space-x-4">
+     <a class="text-orange-500" href="#">
+      Beranda
+     </a>
+     <a class="text-white" href="#">
+      Produk
+    </a>
+     <a class="text-white" href="#">
+      Tentang Kami
+     </a>
+    </nav>
+   </div>
+   <div class="flex items-center space-x-4">
+    <button class="bg-gray-700 p-2 rounded">
+     <i class="fas fa-search">
+     </i>
+     <a class="bg-gray-700 p-2 rounded" href="{{ url_for('search') }}">Search</a>
+
+    </button>
+    <button class="bg-gray-700 p-2 rounded">
+      <a class="bg-gray-700 p-2 rounded" href="{{ url_for('masuk') }}">Masuk</a>
+    </a>
+    </button>
+    <button class="bg-orange-500 p-2 rounded">
+      <a class="bg-orange-500 p-2 rounded" href="{{ url_for('daftar') }}">Daftar</a>
+    </a>    
+    </button>
+   </div>
+  </header>
+  <main class="p-4">
+   <section class="bg-gray-800 p-4 rounded-lg mb-8">
+    <div class="swiper-container">
+     <div class="swiper-wrapper">
+      <div class="swiper-slide relative">
+        <img src="{{ url_for('static', filename='images/Kagura Exorcist & Yu Zhong Exorcist.jpeg') }}" alt="MLBB Banner 1" class="w-full h-[500px] max-w-[1200px] rounded-lg object-cover" />
+          <div class="absolute top-0 left-0 p-4">
+        <h1 class="text-4xl font-bold text-orange-500">
+         Grade Top Up Games
+        </h1>
+        <p class="text-lg">
+         DARI KAMI UNTUK GAMERS
+        </p>
+       </div>
+       <div class="absolute bottom-0 left-0 p-4">
+        <h2 class="text-3xl font-bold text-white">
+         KAMI HADIR KEMBALI
+        </h2>
+        <h2 class="text-3xl font-bold text-red-500">
+         MLBB
+        </h2>
+       </div>
+       <div class="absolute bottom-0 right-0 p-4">
+        <button class="bg-orange-500 p-2 rounded">
+         GRADE TOP UP GAMES
+        </button>
+       </div>
+      </div>
+      <div class="swiper-slide relative">
+        <img src="{{ url_for('static', filename='images/PUBG MOBILE APK+OBB DOWNLOAD ATUALIZADO.jpeg') }}" alt="MLBB Banner 2" class="w-full h-[500px] max-w-[1200px] rounded-lg object-cover" />
+           <div class="absolute top-0 left-0 p-4">
+       <h1 class="text-4xl font-bold text-orange-500">
+         Grade Top Up Games
+        </h1>
+        <p class="text-lg">
+         DARI KAMI UNTUK GAMERS
+        </p>
+       </div>
+       <div class="absolute bottom-0 left-0 p-4">
+        <h2 class="text-3xl font-bold text-white">
+         KAMI HADIR KEMBALI
+        </h2>
+        <h2 class="text-3xl font-bold text-red-500">
+         MLBB
+        </h2>
+       </div>
+       <div class="absolute bottom-0 right-0 p-4">
+        <button class="bg-orange-500 p-2 rounded">
+         GRADE TOP UP GAMES
+        </button>
+       </div>
+      </div>
+      <div class="swiper-slide relative">
+        <img src="{{ url_for('static', filename='images/Garena Free Fire_ Best survival Battle Royale on mobile!.jpeg') }}" 
+        alt="MLBB Banner 3" 
+        class="w-full h-[500px] max-w-[1200px] rounded-lg object-cover" />
+           <div class="absolute top-0 left-0 p-4">
+        <h1 class="text-4xl font-bold text-orange-500">
+          Grade Top Up Games
+         </h1>
+         <p class="text-lg">
+          DARI KAMI UNTUK GAMERS
+         </p>
+        </div>
+        <div class="absolute bottom-0 left-0 p-4">
+         <h2 class="text-3xl font-bold text-white">
+          KAMI HADIR KEMBALI
+         </h2>
+         <h2 class="text-3xl font-bold text-red-500">
+          MLBB
+         </h2>
+        </div>
+        <div class="absolute bottom-0 right-0 p-4">
+         <button class="bg-orange-500 p-2 rounded">
+          GRADE TOP UP GAMES
+         </button>
+        </div>
+       </div>
+     </div>
+     <div class="swiper-pagination">
+     </div>
+     <div class="swiper-button-next">
+     </div>
+     <div class="swiper-button-prev">
+     </div>
+    </div>
+    <div class="flex justify-between items-center mt-3">
+     <div class="flex items-center space-x-3">
+      <i class="fas fa-globe text-orange-500">
+      </i>
+      <a class="text-white" href="#">
+       OFFICIAL WEBSITE GRADETOPUPGAMES.COM
+      </a>
+     </div>
+     <div class="flex items-center space-x-4">
+      <i class="fab fa-instagram text-orange-500">
+      </i>
+      <a class="text-white" href="#">
+       @gradetopup_games
+      </a>
+     </div>
+     <p class="text-white">
+      Lebih Murah Dibanding Toko Lain 💸
+     </p>
+    </div>
+   </section>
+   <section>
+    <h2 class="text-2xl font-bold text-orange-500 mb-4">
+     🔥 POPULER SEKARANG! 🔥
+    </h2>
+    <p class="mb-4">
+     Berikut adalah beberapa produk yang paling populer saat ini.
+    </p>
+    <div class="grid grid-cols-3 gap-4">
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img src="{{ url_for('static', filename='images/hanabi ai.jpeg') }}" alt="Mobile Legends" class="w-[300px] h-[300px] rounded-lg mb-4 object-cover" />
+       <h3 class="text-xl font-bold">
+       Mobile Legends
+      </h3>
+      <p>
+       Moonton
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img src="{{ url_for('static', filename='images/PUBG MOBILE.jpeg') }}" alt="PUBG" class="w-[300px] h-[300px] rounded-lg mb-4 object-cover" />
+       <h3 class="text-xl font-bold">
+       PUBG
+      </h3>
+      <p>
+       Tencent Games
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img src="{{ url_for('static', filename='images/Free Fire Personagens Wallpapers Para Celular E PC • 2024.jpeg') }}" alt="Paket Joki" class="w-[300px] h-[300px] rounded-lg mb-4 object-cover" />
+       <h3 class="text-xl font-bold">
+       Free Fire
+      </h3>
+      <p>
+       Garena
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <script>
+   var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+  </script>
+ </body>
+</html>
